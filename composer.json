@@ -1,0 +1,10 @@
+{
+	"autoload": {
+		"psr-4": {
+			"Tumblr\\": "class"
+		}
+	},
+	"require": {
+		"phpunit/phpunit": "5.4.*"
+	}
+}
