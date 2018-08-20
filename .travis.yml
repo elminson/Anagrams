@@ -3,3 +3,17 @@ language: php
 php:
      - 5.6
      - 7.0
+before_script:
+  - composer self-update
+  - composer install --no-interaction --prefer-source
+  - wget -O phpunit.phar https://phar.phpunit.de/phpunit-6.5.6.phar
+
+script:
+  - php phpunit.phar --configuration ./phpunit.xml
+
+after_success:
+  - wget https://scrutinizer-ci.com/ocular.phar
+  - php ocular.phar code-coverage:upload --format=php-clover clover.xml
+
+notifications:
+  email: false
