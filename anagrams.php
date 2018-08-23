@@ -1,6 +1,6 @@
 <?php
 
-namespace Tumblr;
+namespace Anagram;
 
 require __DIR__ . '/vendor/autoload.php';
 
