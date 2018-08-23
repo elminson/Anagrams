@@ -1,6 +1,6 @@
 <?php
 
-namespace Tumblr;
+namespace Anagram;
 
 use Prophecy\Exception\Exception;
 
@@ -36,7 +36,7 @@ class StringUtils
             if (strlen($word) != strlen($search)) {
                 continue;
             }
-            if (self::is_anagram($word, $search)) {
+            if ($this->is_anagram($word, $search)) {
                 $found_anagram[] = $word;
             }
         }
