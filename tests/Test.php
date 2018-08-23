@@ -7,12 +7,12 @@
  */
 
 
-namespace Tumblr;
+namespace Anagram;
 
 require __DIR__ . '/../vendor/autoload.php';
 
 use PHPUnit\Framework\TestCase;
-use Tumblr;
+use Anagram;
 
 class ATest extends TestCase
 {
