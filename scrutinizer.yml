@@ -1,0 +1,7 @@
+build:
+  nodes:
+    analysis:
+      tests:
+        override:
+          # Add the respective Scrutinizer analysis for your language like
+          - php-scrutinizer-run
